@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>简历投递</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- 导航栏 -->
+  <nav>
+    <ul>
+      <li><a href="#form">简历投递</a></li>
+      <li><a href="#success">成功提示</a></li>
+    </ul>
+  </nav>
+
+  <!-- 简历投递表单部分 -->
+  <section id="form">
+    <h2>简历投递</h2>
+    <form action="" method="post" id="resume-form">
+      <label for="name">姓名：</label>
+      <input type="text" id="name" name="name" required><br>
+      
+      <label for="email">邮箱：</label>
+      <input type="email" id="email" name="email" required><br>
+      
+      <label for="resume">上传简历：</label>
+      <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required><br>
+      
+      <button type="submit">提交简历</button>
+    </form>
+  </section>
+
+  <!-- 成功提示部分 -->
+  <section id="success" style="display:none;">
+    <h2>提交成功</h2>
+    <p>您的简历已成功提交，谢谢！</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
